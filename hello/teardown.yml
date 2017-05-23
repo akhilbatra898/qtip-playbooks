@@ -7,11 +7,8 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 ##############################################################################
 
-# Prepare connection to SUT (System Under Test)
+- hosts: SUT
 
----
-
-- hosts: [fuel-masters, apex-underclouds]
-  gather_facts: no
   roles:
-    - { role: qtip, tasks: generate-inventory }
+  # teardown environment
+  - { role: qtip, tasks: teardown }

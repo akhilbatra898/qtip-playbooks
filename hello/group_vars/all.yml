@@ -7,13 +7,16 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 ##############################################################################
 
-- hosts: compute
+qtip_resources: "/home/akhil/opnfv/qtip/qtip/cli/../../resources"
+qtip_results: results
+qtip_fixtures: fixtures
+qtip_dump: dump
+qtip_cache: ".qtip-cache"
+qtip_workdir: "{{ ansible_env.HOME }}/qtip-workdir-20170523-1948"
+installer_master_group:
+  manual: dummy-group
+  fuel: fuel-masters
+  apex: apex-underclouds
 
-  vars_prompt:
-    - name: remove_workdir
-      prompt: "WARNING: remove work dir from system under test? (yes|no)"
-      default: no
-
-  roles:
-  # teardown environment
-  - { role: qtip, tasks: teardown }
+installer: "manual"
+installer_master_host: "dummy-host"

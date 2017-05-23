@@ -7,15 +7,10 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 ##############################################################################
 
-qtip_resources: "../../../resources"
-qtip_results: results
-qtip_fixtures: fixtures
-qtip_dump: dump
-qtip_cache: ".qtip-cache"
-qtip_workdir: "{{ ansible_env.HOME }}/qtip-workdir-20170506-1227"
-installer_master_group:
-  fuel: fuel-masters
-  apex: apex-underclouds
-
-installer: "fuel"
-installer_master_host: "master"
+# set `testapi_url` to enable reporting to testapi
+# testapi_url: http://localhost:8000/api/v1
+project_name: qtip
+case_name: "compute"
+pod_name: "unknown"
+scenario: "unknown"
+version: "master"
