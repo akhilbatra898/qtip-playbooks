@@ -7,7 +7,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 ##############################################################################
 
-qtip_resources: "../../../resources"
+qtip_resources: "/home/akhil/opnfv/qtip/resources"
 qtip_results: results
 qtip_fixtures: fixtures
 qtip_dump: dump
