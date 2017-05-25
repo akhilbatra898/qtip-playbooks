@@ -1,4 +1,4 @@
 localhost   ansible_connection=local
 
 [fuel-masters]
-master
+fuel-master
