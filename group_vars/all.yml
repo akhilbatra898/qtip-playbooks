@@ -12,11 +12,11 @@ qtip_results: results
 qtip_fixtures: fixtures
 qtip_dump: dump
 qtip_cache: ".qtip-cache"
-qtip_workdir: "{{ ansible_env.HOME }}/qtip-workdir-20170601-2220"
+qtip_workdir: "{{ ansible_env.HOME }}/qtip-workdir-20170613-0929"
 installer_master_group:
   manual: dummy-group
   fuel: fuel-masters
   apex: apex-underclouds
 
-installer: "fuel"
+installer: "manual"
 installer_master_host: "master"

@@ -10,7 +10,7 @@
 # Prepare connection to SUT (System Under Test)
 
 ---
-- hosts: [fuel-masters]
+- hosts: localhost
   gather_facts: no
-  roles:
-    - { role: qtip, tasks: generate-inventory }
+  tasks:
+    - debug: "msg='please add hosts to SUT group in `hosts` file manually.'"
